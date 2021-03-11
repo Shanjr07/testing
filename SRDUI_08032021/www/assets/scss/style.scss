@@ -1,0 +1,88 @@
+/*
+Template Name: Admin Template
+Author: Niravjoshi / Wrappixel
+File: scss
+*/
+//the below is imported for the select option autocomplete
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+/* for custom css for autocomplete select option starts */
+.auto_selectOption {
+	font-size: 15px;
+	padding: 5px;
+	border: 2px solid #dadee2;
+	height: 26px;
+	flex: 1 1 auto;
+	width: calc(100% - 55%)!important;
+}
+
+/* for custom css for autocomplete select option ends */
+/* for swal btn align to center starts */
+.swal-footer {
+	text-align: center !important;
+}
+/* for swal btn align to center ends */
+/* for tfoot starts */
+::ng-deep .dataTables_scrollFootInner {
+	padding-right: 0px !important;
+}
+
+tfoot {
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-weight: bolder;
+	font-size: 13px;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+	table.dataTable tfoot th, table.dataTable tfoot td {
+	padding: 5px 10px;
+	border-bottom: 1px solid #111111;
+	font-size: 13px;
+	white-space: nowrap;
+	}
+
+table.dataTable tfoot td {
+	text-align: center;
+}
+/* for tfoot ends */
+//(Required file)
+@import 'variable';
+
+//Theme colors
+@import 'theme-colors/dark-theme';
+
+// Import Bootstrap source files (Required file)
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//This is for the components (Required file)
+@import 'components';
+
+//This is for the pages (if you are not using some pages you can remove that style from pages folder)
+@import 'pages';
+
+//This is for the widgets (Required file)
+@import 'widgets/widgets';
+
+//This is for the horizontal version if you are not using horizontal version you can remove this
+@import 'horizontal/horizontal';
+
+//This is for the responsive (Required file)
+@import 'responsive';
+
+//In This scss you can write your scss
+@import 'custom'; 
+
+//This is for the icons (Required file)
+@import 'icons/font-awesome/css/fontawesome-all.css';
+@import 'icons/simple-line-icons/css/simple-line-icons.css';
+@import 'icons/weather-icons/css/weather-icons.min.css';
+@import 'icons/themify-icons/themify-icons.css';
+@import 'icons/flag-icon-css/flag-icon.min.css';
+@import "icons/material-design-iconic-font/css/materialdesignicons.min.css";
+@import "icons/crypto-icons/cryptocoins.css";  
+
+// this is for the perfect scrollbar
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';

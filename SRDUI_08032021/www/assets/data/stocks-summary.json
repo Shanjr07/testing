@@ -1,0 +1,28 @@
+{
+	"data":[
+    {"totalLrs": 5, "destination": "Alwaye", "articles": 10, "actualWeight": 3450, "chargedWeight":3450, "amount":28127},
+{"totalLrs": 6, "destination": "Kollam", "articles": 134, "actualWeight": 6950, "chargedWeight":6950, "amount":37417},
+{"totalLrs": 19, "destination": "Erode", "articles": 64, "actualWeight": 4371, "chargedWeight":5815, "amount":45716},
+{"totalLrs": 27, "destination": "Chennai", "articles": 144, "actualWeight": 5280, "chargedWeight":6025, "amount":51501},
+{"totalLrs": 1, "destination": "Alleppey", "articles": 1, "actualWeight": 50, "chargedWeight":50, "amount":947},
+{"totalLrs": 41, "destination": "Madurai", "articles": 199, "actualWeight": 9564, "chargedWeight":12115, "amount":90904},
+{"totalLrs": 43, "destination": "Palakkad", "articles": 209, "actualWeight": 9197, "chargedWeight":10365, "amount":101963},
+{"totalLrs": 5, "destination": "Alwaye", "articles": 10, "actualWeight": 3450, "chargedWeight":3450, "amount":28127},
+{"totalLrs": 6, "destination": "Kollam", "articles": 134, "actualWeight": 6950, "chargedWeight":6950, "amount":37417},
+{"totalLrs": 19, "destination": "Erode", "articles": 64, "actualWeight": 4371, "chargedWeight":5815, "amount":45716},
+{"totalLrs": 27, "destination": "Chennai", "articles": 144, "actualWeight": 5280, "chargedWeight":6025, "amount":51501},
+{"totalLrs": 1, "destination": "Alleppey", "articles": 1, "actualWeight": 50, "chargedWeight":50, "amount":947},
+{"totalLrs": 41, "destination": "Madurai", "articles": 199, "actualWeight": 9564, "chargedWeight":12115, "amount":90904},
+{"totalLrs": 43, "destination": "Palakkad", "articles": 209, "actualWeight": 9197, "chargedWeight":10365, "amount":101963},
+{"totalLrs": 5, "destination": "Alwaye", "articles": 10, "actualWeight": 3450, "chargedWeight":3450, "amount":28127},
+{"totalLrs": 6, "destination": "Kollam", "articles": 134, "actualWeight": 6950, "chargedWeight":6950, "amount":37417},
+{"totalLrs": 19, "destination": "Erode", "articles": 64, "actualWeight": 4371, "chargedWeight":5815, "amount":45716},
+{"totalLrs": 27, "destination": "Chennai", "articles": 144, "actualWeight": 5280, "chargedWeight":6025, "amount":51501},
+{"totalLrs": 1, "destination": "Alleppey", "articles": 1, "actualWeight": 50, "chargedWeight":50, "amount":947},
+{"totalLrs": 41, "destination": "Madurai", "articles": 199, "actualWeight": 9564, "chargedWeight":12115, "amount":90904},
+{"totalLrs": 43, "destination": "Palakkad", "articles": 209, "actualWeight": 9197, "chargedWeight":10365, "amount":101963},
+{"totalLrs": 5, "destination": "Alwaye", "articles": 10, "actualWeight": 3450, "chargedWeight":3450, "amount":28127},
+{"totalLrs": 6, "destination": "Kollam", "articles": 134, "actualWeight": 6950, "chargedWeight":6950, "amount":37417},
+{"totalLrs": 19, "destination": "Erode", "articles": 64, "actualWeight": 4371, "chargedWeight":5815, "amount":45716}
+    ]
+}
