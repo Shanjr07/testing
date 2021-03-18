@@ -3,7 +3,7 @@
 
     <!--<property name="LOGS" value="../srdwebapplogs" />-->
 
-<property name="LOGS" value="/home/ubuntu/srdwebapplogs" />
+<property name="LOGS" value="/home/ubuntu/srdnewapplogs" />
     <appender name="Console"
         class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
