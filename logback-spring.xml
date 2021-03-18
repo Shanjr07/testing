@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-<Properties>
-		<Property name="LOG_PATTERN">
-			<!-- %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n -->
+<!-- <Properties>
+		<Property name="LOG_PATTERN"> 
+			%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
 			%d{HH:mm:ss.SSS} %highlight{%-5p} [%t] %logger{36} - %msg%n
 		</Property>
 		<Property name="LOG_PATH" value="../srdnewapplogs" />
-	</Properties>
+	</Properties> -->
 
 	<appender name="STDOUT"
 		class="ch.qos.logback.core.ConsoleAppender">
@@ -23,7 +23,7 @@
 	<appender name="SAVETOFILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
 
-		<file>${LOG_PATH}/srdapp.log</file>
+		<file>../srdnewapplogs/srdapp.log</file>
 
 		<encoder
 			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -47,7 +47,7 @@
 		
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>
-				${LOG_PATH}/srdapp_%d{dd-MM-yyyy}.log
+				../srdnewapplogs/srdapp_%d{dd-MM-yyyy}.log
 			</fileNamePattern>
 			<maxHistory>10</maxHistory>
 			<totalSizeCap>100MB</totalSizeCap>
