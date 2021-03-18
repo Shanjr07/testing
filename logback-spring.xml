@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+<Properties>
+		<Property name="LOG_PATTERN">
+			<!-- %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n -->
+			%d{HH:mm:ss.SSS} %highlight{%-5p} [%t] %logger{36} - %msg%n
+		</Property>
+		<Property name="LOG_PATH" value="../srdnewapplogs" />
+	</Properties>
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				<!-- %d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level
+				%logger{36}.%M - %msg%n -->
+				%d [%level] %c{1.} [%t] %m%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="SAVETOFILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+		<file>${LOG_PATH}/srdapp.log</file>
+
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				<!-- %d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level
+				%logger{36}.%M - %msg%n -->
+				%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+			</Pattern>
+		</encoder>
+
+<!--
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOG_PATH}/webapp_%d{dd-MM-yyyy}_%i.log
+			</fileNamePattern>
+			<maxFileSize>100MB</maxFileSize>
+			<maxHistory>60</maxHistory>
+			<totalSizeCap>1000MB</totalSizeCap>
+		</rollingPolicy> -->
+		
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOG_PATH}/srdapp_%d{dd-MM-yyyy}.log
+			</fileNamePattern>
+			<maxHistory>10</maxHistory>
+			<totalSizeCap>100MB</totalSizeCap>
+		</rollingPolicy>
+	</appender>
+	
+	<!-- <logger name="com.petroapp.jeddex" level="error" additivity="false">
+		<appender-ref ref="STDOUT" />
+        <appender-ref ref="SAVETOFILE"/>
+    </logger> -->
+
+	<root level="error">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="SAVETOFILE" />
+	</root>
+
+</configuration>
